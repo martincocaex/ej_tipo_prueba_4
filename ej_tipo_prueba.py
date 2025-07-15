@@ -81,12 +81,13 @@ def verificar_usuario():
 
 
 def verificar_usario_2():
-    intentos-=1
-    usuario=input("Ingrese el nombre del usuario que desea buscar: ")
+    intentos = 0  # Inicializar la variable
+    usuario = input("Ingrese el nombre del usuario que desea buscar: ")
     for i in lista_usuarios:
-        intentos+=1
-        if usuario==i["nombre"]:
+        if usuario == i["nombre"]:
             return intentos
+        intentos += 1
+    return None
         
 
 
